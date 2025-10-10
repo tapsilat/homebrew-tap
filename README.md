@@ -15,5 +15,11 @@ brew tap tapsilat/tap
 brew install tapsilat
 ```
 
+or 
+
+```bash
+brew install tapsilat/tap/tapsilat
+```
+
 ## Usage
 After installation, you can use the Homebrew CLI by typing `tapsilat` in your terminal. 
