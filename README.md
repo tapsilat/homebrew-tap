@@ -11,7 +11,7 @@ To install the Homebrew CLI, you need to have Homebrew installed on your macOS s
 Once Homebrew is installed, you can install the Homebrew CLI by running:
 
 ```bash
-brew tap tapsilat/homebrew-cli
+brew tap tapsilat/tap
 brew install tapsilat
 ```
 
