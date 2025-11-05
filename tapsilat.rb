@@ -1,16 +1,16 @@
 class Tapsilat < Formula
   desc "Omnichannel payments CLI for Tapsilat"
   homepage "https://tapsilat.com"
-  version "2025.10.09.9"
+  version "2025.11.05.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tapsilat/tapsilat-cli/releases/download/v#{version}/tapsilat-cli_darwin_arm64.tar.gz"
-      sha256 "a5c8ec1236dff53f2339625bd8fb57ae6cac7a13eed391f0e3df768c701f991d"
+      sha256 "17f100ea291f6e651b4f09bfc67114d24f87f1e2496a674949b183c66b9ddcfc"
     elsif Hardware::CPU.intel?
       url "https://github.com/tapsilat/tapsilat-cli/releases/download/v#{version}/tapsilat-cli_darwin_amd64.tar.gz"
-      sha256 "82bb655bd71ace8cb3dad961efc0e62174b7764ebb1149f0d6869ad5c50dfa3d"
+      sha256 "6b668279a601bf55b21975b37f4273f50aea8f662b65b3e84c381fb57058c9bd"
     else
       odie "Unsupported macOS architecture"
     end
@@ -19,10 +19,10 @@ class Tapsilat < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tapsilat/tapsilat-cli/releases/download/v#{version}/tapsilat-cli_linux_arm64.tar.gz"
-      sha256 "4a292bd5dd14d336f0cb6da2df563e0cb804ba0fd31180219f20434aaf321c87"
+      sha256 "3ce3dec8d8f5c86f25cc7621a1906ca39e02fe4d0d0c480f10618b6e84559a3d"
     elsif Hardware::CPU.intel?
       url "https://github.com/tapsilat/tapsilat-cli/releases/download/v#{version}/tapsilat-cli_linux_amd64.tar.gz"
-      sha256 "85a91a8026c9e22a0be64d7905aed1f76472f3c776212eccf88a6b3d46884fbb"
+      sha256 "2c02c4d008a6600c30fe8a18faca446fe1cdae9bcbc42d8e6f5b31e1225fbf7a"
     else
       odie "Unsupported Linux architecture"
     end
